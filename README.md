@@ -1,2 +1,2 @@
-# -Final_layout
+# Final_layout
 Итоговый макет
