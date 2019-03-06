@@ -2152,6 +2152,7 @@ main {
   }
   html .main_box6 .box_6_items_2 {
     width: 576px;
+    height: 100%;
     flex-direction: column;
     align-items: center;
   }
