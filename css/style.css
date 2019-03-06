@@ -919,14 +919,18 @@ main {
 .main_box4 .wraper_items_box4 .conteiner_details {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   margin: 40px 0 0 80px;
   padding-top: 20px;
   width: 600px;
-  min-height: 150px;
+  min-height: 250px;
+  max-height: 300px;
 }
 .main_box4 .wraper_items_box4 .conteiner_details details[open] {
-  height: 60px;
+  height: 50px;
+  padding: 0;
+}
+.main_box4 .wraper_items_box4 .conteiner_details details {
+  height: 50px;
 }
 .main_box4 .wraper_items_box4 .conteiner_details summary {
   position: relative;
@@ -1200,7 +1204,7 @@ main {
 }
 /*                                                      конец 5 начало 6                                             */
 .main_box6 {
-  max-width: 1920px;
+  width: 1920px;
   height: 1000px;
   background-color: #f4f5f8;
   background-color: #191919;
@@ -1210,7 +1214,7 @@ main {
   justify-content: center;
   align-items: center;
   z-index: 1;
-  min-height: 489px;
+  height: 489px;
   position: relative;
   background-color: rgba(17, 17, 17, 0.7);
   background-image: url(../img/photo_gori_vid.jpg);
@@ -1248,7 +1252,7 @@ main {
 }
 /*                                        начало блока box_6_items_2               */
 .box_6_items_2 {
-  min-height: 506px;
+  height: 506px;
   width: 1920px;
   display: flex;
   justify-content: center;
@@ -1336,10 +1340,10 @@ main {
 }
 .part_1 .logo_02:active .logo_svg_02 {
   fill: gold;
-  stroke: blue;
+  stroke: #ffffff;
 }
 .part_1 .logo_02:active .logo-txt_02 {
-  color: blue;
+  color: #c7b299;
 }
 .part_1 .style_p_part_1:hover {
   color: #c7b299;
