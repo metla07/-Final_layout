@@ -2128,6 +2128,7 @@ main {
     justify-content: space-between;
   }
   .main_box6 .box_6_items_1 .cat {
+    width: 576px;
     margin-top: 50px;
     height: 1100px;
     flex-direction: column;
