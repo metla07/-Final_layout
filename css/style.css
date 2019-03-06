@@ -57,7 +57,7 @@
 }
 body {
   margin: 0 auto;
-  width: 1920px;
+  max-width: 1920px;
   background: #e1ffff;
   background: -moz-linear-gradient(top, #e1ffff 0%, #bee4f8 4%, #bee4f8 4%, #e1ffff 9%, #e1ffff 15%, #bee4f8 20%, #fdffff 25%, #bee4f8 41%, #bee4f8 41%, #e6f8fd 47%, #e1ffff 60%, #e1ffff 60%, #c8eefb 70%, #e1ffff 82%, #e1ffff 82%, #bee4f8 90%, #e1ffff 96%, #e1ffff 96%, #b1d8f5 100%);
   background: -webkit-linear-gradient(top, #e1ffff 0%, #bee4f8 4%, #bee4f8 4%, #e1ffff 9%, #e1ffff 15%, #bee4f8 20%, #fdffff 25%, #bee4f8 41%, #bee4f8 41%, #e6f8fd 47%, #e1ffff 60%, #e1ffff 60%, #c8eefb 70%, #e1ffff 82%, #e1ffff 82%, #bee4f8 90%, #e1ffff 96%, #e1ffff 96%, #b1d8f5 100%);
@@ -105,7 +105,7 @@ body li {
 /*                     конец общих элементов          */
 header {
   /* min-width: @box;*/
-  max-width: 1920px;
+  width: 1920px;
   height: 1024px;
   background: url(../img/photo_01.jpg) no-repeat;
   background-size: contain;
@@ -812,6 +812,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 1920px;
   min-height: 705px;
 }
 .block_video .video_film {
