@@ -60,7 +60,7 @@ html {
 }
 body {
   margin: 0 auto;
-  max-width: 1920px;
+  width: 1920px;
   background: #e1ffff;
   background: -moz-linear-gradient(top, #e1ffff 0%, #bee4f8 4%, #bee4f8 4%, #e1ffff 9%, #e1ffff 15%, #bee4f8 20%, #fdffff 25%, #bee4f8 41%, #bee4f8 41%, #e6f8fd 47%, #e1ffff 60%, #e1ffff 60%, #c8eefb 70%, #e1ffff 82%, #e1ffff 82%, #bee4f8 90%, #e1ffff 96%, #e1ffff 96%, #b1d8f5 100%);
   background: -webkit-linear-gradient(top, #e1ffff 0%, #bee4f8 4%, #bee4f8 4%, #e1ffff 9%, #e1ffff 15%, #bee4f8 20%, #fdffff 25%, #bee4f8 41%, #bee4f8 41%, #e6f8fd 47%, #e1ffff 60%, #e1ffff 60%, #c8eefb 70%, #e1ffff 82%, #e1ffff 82%, #bee4f8 90%, #e1ffff 96%, #e1ffff 96%, #b1d8f5 100%);
@@ -107,7 +107,6 @@ body li {
 }
 /*                     конец общих элементов          */
 header {
-  /* min-width: @box;*/
   width: 1920px;
   height: 1024px;
   background: url(../img/photo_01.jpg) no-repeat;
@@ -1576,14 +1575,15 @@ main {
 /*                         медиа  запрос 800рх                      */
 @media (max-width: 800px) {
   html {
+    box-sizing: border-box;
     width: 800px;
   }
   html body {
-    width: 800px;
+    width: 100%;
   }
   html body header {
     margin: 0 auto;
-    width: 800px;
+    width: 100%;
     height: 428px;
   }
   html body header .slider {
@@ -1597,7 +1597,7 @@ main {
   }
   html body header .navigation_header {
     height: 425px;
-    width: 800px;
+    width: 100%;
     justify-content: center;
     flex-direction: column;
   }
@@ -1698,11 +1698,11 @@ main {
   }
   html .main {
     margin: 0 auto;
-    width: 800px;
+    width: 100%;
   }
   html .main .main_box1 {
     height: 650px;
-    width: 800px;
+    width: 100%;
   }
   html .main .main_box1 .wraper_img {
     display: none;
@@ -1711,7 +1711,7 @@ main {
     flex-direction: row;
     flex-flow: wrap;
     align-self: center;
-    width: 800px;
+    width: 100%;
   }
   html .main .main_box1 .box1-conteiner .wraper-items {
     align-self: center;
@@ -1721,11 +1721,11 @@ main {
   html .aside_1 {
     flex-direction: column;
     margin: 0 auto;
-    width: 800px;
+    width: 100%;
   }
   html .main_box2 {
     margin: 0 auto;
-    width: 800px;
+    width: 100%;
     height: 100%;
   }
   html .main_box2 .one_font_style_class_p {
@@ -1745,7 +1745,7 @@ main {
     height: 30px;
   }
   html .main_box2 .foto_conteyner {
-    width: 800px;
+    width: 100%;
   }
   html .main_box2 .btn_5 {
     margin: 20px auto;
@@ -1755,12 +1755,12 @@ main {
   }
   html .main_box4 {
     margin: 0 auto;
-    width: 800px;
+    width: 100%;
     height: 900px;
     background-position: 40px 300px;
   }
   html .main_box4 .wraper_items_box4 {
-    width: 800px;
+    width: 100%;
     height: 800px;
     margin: 20px 0 0 0px;
   }
@@ -1803,7 +1803,7 @@ main {
   }
   html .main_box5 {
     margin: 0 auto;
-    width: 800px;
+    width: 100%;
     height: 1100px;
     justify-content: flex-start;
   }
@@ -1826,14 +1826,14 @@ main {
     flex-direction: row;
     flex-flow: wrap;
     justify-content: space-around;
-    width: 800px;
+    width: 100%;
   }
   html .main_box5 .conteiner_article .article_items {
     margin-bottom: 20px;
   }
   html .main_box6 {
     margin: 0 auto;
-    width: 800px;
+    width: 100%;
     height: 100%;
   }
   html .main_box6 .box_6_items_1 {
@@ -1853,7 +1853,7 @@ main {
     margin: 10px 0 0 0;
   }
   html .main_box6 .box_6_items_2 {
-    width: 800px;
+    width: 100%;
     height: 100%;
     flex-direction: row;
     flex-flow: wrap;
@@ -1870,7 +1870,7 @@ main {
   }
   html .footer {
     margin: 0 auto;
-    width: 800px;
+    width: 100%;
     height: 200px;
   }
   html .footer .box_footer {
@@ -1891,10 +1891,12 @@ main {
 /*                                    медиа запрос 576 рх       */
 @media (max-width: 576px) {
   html {
-    width: 576px;
+    box-sizing: border-box;
+    width: 100%;
   }
   html body {
-    width: 576px;
+    box-sizing: border-box;
+    width: 100%;
   }
   html body header {
     margin: 0 auto;
