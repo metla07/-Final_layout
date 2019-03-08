@@ -65,11 +65,12 @@
 * {
     margin: 0;
     padding: 0;
-   /* outline: 1px solid #000;*/
-    box-sizing: border-box;
+    /* outline: 1px solid #000;
+    box-sizing: border-box;*/
 }
 
 html {
+    box-sizing: border-box;
     width: 100%;
 }
 
@@ -134,6 +135,7 @@ body li {
 
 .conteiner {
     overflow-x: hidden;
+    margin: 0 auto;
 }
 
 header {
@@ -442,8 +444,7 @@ header:hover:before {
 /*                               Качало мейна                 */
 
 main {
-  width: 1920px;
-    
+    width: 1920px;
 }
 
 
@@ -519,7 +520,6 @@ main {
         background-color: rgb(251, 250, 248);
         min-height: 500px;
         width: 1920px;
-       
         display: flex;
         flex-direction: column;
         .one_font_style_class_p {
@@ -533,7 +533,6 @@ main {
             padding-top: 30px;
             min-height: 570px;
             width: 1300px;
-            
             .cursor {
                 cursor: pointer;
             }
@@ -595,8 +594,7 @@ main {
 /*                                 ASIDE                            */
 
 .aside_1 {
- 
- width: 1920px;
+    width: 1920px;
     display: flex;
     justify-content: space-around;
     padding: 10px;
@@ -693,7 +691,7 @@ main {
             line-height: 30px;
             text-align: center;
             border: 1px solid #ccc;
-             border-radius: 3px;
+            border-radius: 3px;
         }
         a:hover {
             /* Style for "button" */
@@ -1628,6 +1626,7 @@ main {
     z-index: 3;
 }
 
+
 /*.modal:before {
     content: "";
     display: block;
@@ -1670,14 +1669,17 @@ main {
 
 @media (max-width: 800px) {
     html {
-       
-        width: 800px;
+        box-sizing: border-box;
+        width: 100%;
         body {
             width: 100%;
+            .conteiner {
+                overflow-x: hidden;
+               
+            }
             header {
-                 box-sizing: border-box;
                 margin: 0 auto;
-                width: 100%;
+                width: 800px;
                 height: 428px;
                 .slider {
                     display: none;
@@ -1793,7 +1795,7 @@ main {
         }
         .main {
             margin: 0 auto;
-            width: 100%;
+            width: 800px;
             .main_box1 {
                 height: 650px;
                 width: 100%;
@@ -1804,7 +1806,7 @@ main {
                     flex-direction: row;
                     flex-flow: wrap;
                     align-self: center;
-                   width: 100%;
+                    width: 100%;
                     .wraper-items {
                         align-self: center;
                         width: 300px;
@@ -1816,7 +1818,7 @@ main {
         .aside_1 {
             flex-direction: column;
             margin: 0 auto;
-           width: 100%;
+            width: 100%;
         }
         .main_box2 {
             margin: 0 auto;
@@ -1855,10 +1857,9 @@ main {
             height: 900px;
             background-position: 40px 300px;
             .wraper_items_box4 {
-              
+                position: relative;
                 top: 80px;
-               left: 0px;
-                
+                left: 30px;
                 h2 {
                     text-align: center;
                 }
@@ -1868,7 +1869,8 @@ main {
                     height: 180px;
                 }
                 .conteiner_details {
-                    
+                    position: absolute;
+                    left: 130px;
                     width: 350px;
                     details[open] {
                         height: 100%;
@@ -1949,7 +1951,7 @@ main {
                 }
             }
             .box_6_items_2 {
-               width: 100%;
+                width: 100%;
                 height: 100%;
                 flex-direction: row;
                 flex-flow: wrap;
@@ -1970,7 +1972,7 @@ main {
         }
         .footer {
             margin: 0 auto;
-            width: 100%;
+            width: 800px;
             height: 200px;
             .box_footer {
                 height: 100px;
@@ -2183,9 +2185,8 @@ main {
                     height: 180px;
                 }
                 .conteiner_details {
-                    width:400px;
+                    width: 400px;
                     margin: 0 auto;
-                    
                     details[open] {
                         height: 150px;
                         p {
