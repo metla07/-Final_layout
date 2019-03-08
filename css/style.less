@@ -70,7 +70,7 @@
 }
 
 html {
-    min-width: 100%;
+    width: 100%;
 }
 
 body {
@@ -107,18 +107,19 @@ body li {
 .one_font_style_class_h2 {
     padding: 80px 0 30px 0;
     text-align: center;
-    /* Style for "Waxom is R" */
+    margin: 0 auto;
     height: 28px;
     color: #555555;
     font-family: "raleway";
     font-size: 30px;
     font-weight: 400;
     line-height: 28px;
+    width: 100%;
 }
 
 .one_font_style_class_p {
     display: block;
-    width: 780px;
+    width: 40%;
     height: 70px;
     color: #8c8c8c;
     font-family: 'montserrat';
@@ -130,6 +131,10 @@ body li {
 
 
 /*                     конец общих элементов          */
+
+.conteiner {
+    overflow-x: hidden;
+}
 
 header {
     width: @max;
@@ -437,16 +442,15 @@ header:hover:before {
 /*                               Качало мейна                 */
 
 main {
-    min-width: @box;
-    max-width: @max;
+  width: 1920px;
+    
 }
 
 
 /*                               Конец мейна                   */
 
 .main_box1 {
-    min-width: @box;
-    max-width: @max;
+    width: 100%;
     height: 1150px;
     display: flex;
     flex-direction: column;
@@ -514,8 +518,8 @@ main {
         overflow-x: hidden;
         background-color: rgb(251, 250, 248);
         min-height: 500px;
-        min-width: @box;
-        max-width: @max;
+        width: 1920px;
+       
         display: flex;
         flex-direction: column;
         .one_font_style_class_p {
@@ -529,7 +533,7 @@ main {
             padding-top: 30px;
             min-height: 570px;
             width: 1300px;
-            max-width: @max;
+            
             .cursor {
                 cursor: pointer;
             }
@@ -591,8 +595,8 @@ main {
 /*                                 ASIDE                            */
 
 .aside_1 {
-    min-width: @box;
-    max-width: @max;
+ 
+ width: 1920px;
     display: flex;
     justify-content: space-around;
     padding: 10px;
@@ -607,7 +611,7 @@ main {
         align-self: center;
         .white_word_2 {
             /* Style for "Don't Forg" */
-            min-width: 456px;
+            width: 556px;
             height: 18px;
             color: #615855;
             font-family: Montserrat;
@@ -617,7 +621,7 @@ main {
         h2 {
             /* Style for "Waxom Mult" */
             margin-bottom: 5px;
-            min-width: 530px;
+            width: 556px;
             height: 27px;
             color: #ffffff;
             font-family: Raleway;
@@ -672,7 +676,7 @@ main {
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
-        max-width: 600px;
+        width: 576px;
         height: 24px;
         li {
             width: 203px;
@@ -688,7 +692,8 @@ main {
             font-weight: 300;
             line-height: 30px;
             text-align: center;
-            outline: 1px solid #ccc;
+            border: 1px solid #ccc;
+             border-radius: 3px;
         }
         a:hover {
             /* Style for "button" */
@@ -934,6 +939,7 @@ main {
 }
 
 .main_box4 {
+    position: relative;
     display: flex;
     width: 1920px;
     justify-content: center;
@@ -944,7 +950,9 @@ main {
     background-repeat: no-repeat;
     background-position: 400px 100px;
     .wraper_items_box4 {
-        margin: 200px 0 0 500px;
+        position: absolute;
+        top: 100px;
+        left: 750px;
         height: 400px;
         h2 {
             padding: 0;
@@ -1601,6 +1609,7 @@ main {
 /*                                 модальное окно                    */
 
 .modal {
+    margin: 0 auto;
     border: 1px solid black;
     border-radius: 30px;
     width: 250px;
@@ -1619,7 +1628,7 @@ main {
     z-index: 3;
 }
 
-.modal:before {
+/*.modal:before {
     content: "";
     display: block;
     height: 100%;
@@ -1629,7 +1638,7 @@ main {
     left: 0;
     background-color: rgba(255, 255, 255, 0.2);
     z-index: -1;
-}
+}*/
 
 .modal_p {
     border: 1px solid #000;
@@ -1661,11 +1670,12 @@ main {
 
 @media (max-width: 800px) {
     html {
-        box-sizing: border-box;
+       
         width: 800px;
         body {
             width: 100%;
             header {
+                 box-sizing: border-box;
                 margin: 0 auto;
                 width: 100%;
                 height: 428px;
@@ -1845,9 +1855,10 @@ main {
             height: 900px;
             background-position: 40px 300px;
             .wraper_items_box4 {
-                width: 100%;
-                height: 800px;
-                margin: 20px 0 0 0px;
+              
+                top: 80px;
+               left: 0px;
+                
                 h2 {
                     text-align: center;
                 }
@@ -1857,7 +1868,7 @@ main {
                     height: 180px;
                 }
                 .conteiner_details {
-                    margin-left: 430px;
+                    
                     width: 350px;
                     details[open] {
                         height: 100%;
@@ -2163,7 +2174,7 @@ main {
             background-position: 60px 600px;
             .wraper_items_box4 {
                 width: 500px;
-                margin: 20px 0 0 0px;
+                left: 50px;
                 h2 {
                     text-align: center;
                 }
@@ -2172,13 +2183,14 @@ main {
                     height: 180px;
                 }
                 .conteiner_details {
-                    width: 350px;
+                    width:400px;
                     margin: 0 auto;
+                    
                     details[open] {
-                        height: 100%;
+                        height: 150px;
                         p {
-                            width: 350px;
-                            height: 50px;
+                            width: 100%;
+                            height: 20px;
                         }
                     }
                     summary {
