@@ -554,7 +554,6 @@ main {
   width: 1920px;
   display: flex;
   justify-content: space-around;
-  padding: 10px;
   /* Style for "Background" */
   min-height: 150px;
   background-color: #f4f5f8;
@@ -1545,17 +1544,17 @@ main {
   display: block;
   z-index: 3;
 }
-/*.modal:before {
-    content: "";
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgba(255, 255, 255, 0.2);
-    z-index: -1;
-}*/
+.modal:before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
 .modal_p {
   border: 1px solid #000;
   margin: 20px auto 0 auto;
