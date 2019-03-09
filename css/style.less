@@ -65,8 +65,8 @@
 * {
     margin: 0;
     padding: 0;
-    /* outline: 1px solid #000;
-    box-sizing: border-box;*/
+    /* outline: 1px solid #000;*/
+    box-sizing: border-box;
 }
 
 html {
@@ -75,7 +75,7 @@ html {
 }
 
 body {
-    margin: 0 auto;
+    
     width: @max;
     background: rgb(225, 255, 255);
     background: -moz-linear-gradient(top, rgba(225, 255, 255, 1) 0%, rgba(190, 228, 248, 1) 4%, rgba(190, 228, 248, 1) 4%, rgba(225, 255, 255, 1) 9%, rgba(225, 255, 255, 1) 15%, rgba(190, 228, 248, 1) 20%, rgba(253, 255, 255, 1) 25%, rgba(190, 228, 248, 1) 41%, rgba(190, 228, 248, 1) 41%, rgba(230, 248, 253, 1) 47%, rgba(225, 255, 255, 1) 60%, rgba(225, 255, 255, 1) 60%, rgba(200, 238, 251, 1) 70%, rgba(225, 255, 255, 1) 82%, rgba(225, 255, 255, 1) 82%, rgba(190, 228, 248, 1) 90%, rgba(225, 255, 255, 1) 96%, rgba(225, 255, 255, 1) 96%, rgba(177, 216, 245, 1) 100%);
@@ -589,7 +589,10 @@ main {
         }
     }
 }
+
+
 /*                                 ASIDE                            */
+
 .aside_1 {
     width: 1920px;
     display: flex;
@@ -1603,7 +1606,6 @@ main {
 /*                                 модальное окно                    */
 
 .modal {
-    margin: 0 auto;
     border: 1px solid black;
     border-radius: 30px;
     width: 250px;
@@ -1668,9 +1670,6 @@ main {
         width: 100%;
         body {
             width: 100%;
-            .conteiner {
-                overflow-x: hidden;
-            }
             header {
                 margin: 0 auto;
                 width: 800px;
@@ -1812,7 +1811,7 @@ main {
         .aside_1 {
             flex-direction: column;
             margin: 0 auto;
-            width: 100%;
+            width: 800px;
         }
         .main_box2 {
             margin: 0 auto;
@@ -1864,10 +1863,11 @@ main {
                 }
                 .conteiner_details {
                     position: absolute;
-                    left: 130px;
+                    margin: 0;
+                    left: 210px;
                     width: 350px;
                     details[open] {
-                        height: 100%;
+                        height: 50%;
                         p {
                             width: 350px;
                             height: 50px;
@@ -2170,7 +2170,7 @@ main {
             background-position: 60px 600px;
             .wraper_items_box4 {
                 width: 500px;
-                left: 50px;
+                left: 20px;
                 h2 {
                     text-align: center;
                 }
@@ -2180,7 +2180,8 @@ main {
                 }
                 .conteiner_details {
                     width: 400px;
-                    margin: 0 auto;
+                   margin: 0;
+                    left: 40px;
                     details[open] {
                         height: 150px;
                         p {
