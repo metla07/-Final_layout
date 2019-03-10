@@ -958,13 +958,13 @@
                     width: 100%;
                     height: 100%;
                     details[open] {
-                        height: 50px;
+                        height: 60px;
                         padding: 0;
-                        margin-bottom: -40px;
+                        
                     }
                     details {
-                        height: 100px;
-                        margin: 0 0 10px 0;
+                        height: 60px;
+                        margin: 0 0 0 0;
                     }
                     summary {
                         position: relative;
@@ -1070,7 +1070,12 @@
             justify-content: space-around;
             flex-direction: column;
             align-items: center;
+            h2 {
+                padding-top: 40px;
+                margin-bottom: 30px;
+            }
             .btn_article {
+                margin: 50px 0 50px 0;
                 display: flex;
                 .btn_mini_1 {
                     display: block;
@@ -1151,10 +1156,10 @@
                 .article_items {
                     position: relative;
                     display: flex;
-                    justify-content: space-around;
+                    justify-content: flex-start;
                     flex-direction: column;
                     width: 100%;
-                    height: 200px;
+                    height: 160px;
                     margin-top: -5px;
                 }
                 .box_article:hover p {
@@ -1187,7 +1192,7 @@
                     content: "";
                     display: block;
                     width: 100%;
-                    height: 50%;
+                    height: 60%;
                     background: rgba(72, 70, 66, 0.5);
                 }
                 .box_article {
@@ -1200,7 +1205,7 @@
                     }
                     h3 {
                         text-align: left;
-                        margin-left: 30px;
+                        margin: 10px  0 0 30px;
                         min-height: 19px;
                         color: #555555;
                         font-family: Raleway;
@@ -1209,7 +1214,7 @@
                     }
                     p {
                         /* Style for "Claritas e" */
-                        margin: 0 auto;
+                        margin: 10px auto;
                         max-width: 310px;
                         min-height: 36px;
                         color: #8c8c8c;
@@ -1222,6 +1227,7 @@
                         /* Style for "Read More" */
                         position: relative;
                         margin-left: 30px;
+                        margin-top: 30px;
                         display: block;
                         min-width: 90px;
                         max-width: 130px;
@@ -1856,8 +1862,11 @@
                                 margin: 0;
                                 left: 370px;
                                 width: 350px;
+                                details {
+                                    height: 60px;
+                                }
                                 details[open] {
-                                    height: 50%;
+                                    height: 60px;
                                     p {
                                         width: 350px;
                                         height: 50px;
@@ -2207,8 +2216,11 @@
                                 width: 80%;
                                 top: 250px;
                                 left: 70px;
+                                details {
+                                    height: 60px;
+                                }
                                 details[open] {
-                                    height: 150px;
+                                    height: 60px;
                                     p {
                                         width: 100%;
                                         height: 20px;
@@ -2372,7 +2384,7 @@
                                
                                 .btn {
                                     position: absolute;
-                                    left: 340px;
+                                    left: 320px;
                                     top: 33px;
                                     bottom: 0;
                                     right: 0;
@@ -2415,7 +2427,7 @@
                                     position: absolute;
                                     right: 0;
                                     bottom: 0;
-                                    left: 330px;
+                                    left: 310px;
                                     top: 250px;
                                     z-index: 2;
                                     display: block;
@@ -2460,7 +2472,7 @@
                                     position: absolute;
                                     width: 100px;
                                     top: 50px;
-                                    left: 150px;
+                                    left: 140px;
                                     right: 0;
                                     bottom: 0;
                                     align-self: center;
@@ -2567,19 +2579,20 @@
                             }
                             .conteiner_details {
                                 margin: 0;
+                                height: 300px;
                                 position: absolute;
                                 justify-content: space-around;
                                 width: 100%;
                                 top: 330px;
                                 left: 20px;
                                 details {
-                                    height: 100px;
+                                   height: 60px;
                                     margin: 0 0 10px 0;
                                 }
                                 details[open] {
-                                    height: 50px;
+                                    height: 60px;
                                     padding: 0;
-                                    margin-bottom: -40px;
+                                    
                                     p {
                                         width: 100%;
                                         height: 20px;
