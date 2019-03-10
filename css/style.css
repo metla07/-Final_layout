@@ -924,18 +924,20 @@ main {
 .main_box4 .wraper_items_box4 .conteiner_details {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   margin: 40px 0 0 80px;
-  padding-top: 20px;
+  padding-top: 0;
   width: 100%;
-  min-height: 250px;
-  max-height: 300px;
+  height: 100%;
 }
 .main_box4 .wraper_items_box4 .conteiner_details details[open] {
   height: 50px;
   padding: 0;
+  margin-bottom: -40px;
 }
 .main_box4 .wraper_items_box4 .conteiner_details details {
-  height: 50px;
+  height: 100px;
+  margin: 0 0 10px 0;
 }
 .main_box4 .wraper_items_box4 .conteiner_details summary {
   position: relative;
@@ -1535,7 +1537,7 @@ main {
   height: 180px;
   position: fixed;
   top: 1%;
-  left: 43.5%;
+  left: 30.5%;
   right: 0;
   bottom: 0;
   display: none;
@@ -1929,6 +1931,9 @@ main {
     width: 100%;
   }
   html body .conteiner header {
+    background: url(../img/photo_01.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50% 20%;
     width: 100%;
     height: 100%;
   }
@@ -2142,7 +2147,7 @@ main {
   html body .main_box4 .wraper_items_box4 .conteiner_details {
     margin: 0;
     position: absolute;
-    width: 300px;
+    width: 80%;
     top: 250px;
     left: 70px;
   }
@@ -2272,6 +2277,9 @@ main {
     width: 100%;
   }
   html body .conteiner header {
+    background: url(../img/photo_01.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50% 20%;
     width: 100%;
     height: 100%;
   }
@@ -2292,16 +2300,16 @@ main {
   }
   html body .conteiner header .navigation_header .search_btn {
     position: absolute;
-    left: 50px;
-    top: 170px;
+    left: 20px;
+    top: 70px;
     right: 0;
     bottom: 0;
     transform: scale(1.6);
   }
   html body .conteiner header .navigation_header .btn {
     position: absolute;
-    left: 120px;
-    top: 125px;
+    left: 340px;
+    top: 33px;
     bottom: 0;
     right: 0;
     margin: 0;
@@ -2312,7 +2320,7 @@ main {
     position: absolute;
     width: 230px;
     left: 50px;
-    top: 64px;
+    top: 70px;
   }
   html body .conteiner header .navigation_header .header_form_search {
     position: absolute;
@@ -2343,8 +2351,8 @@ main {
     position: absolute;
     right: 0;
     bottom: 0;
-    left: 300px;
-    top: 230px;
+    left: 330px;
+    top: 250px;
     z-index: 2;
     display: block;
     display: flex;
@@ -2388,7 +2396,7 @@ main {
     position: absolute;
     width: 100px;
     top: 50px;
-    left: 240px;
+    left: 150px;
     right: 0;
     bottom: 0;
     align-self: center;
@@ -2494,12 +2502,19 @@ main {
   html body .main_box4 .wraper_items_box4 .conteiner_details {
     margin: 0;
     position: absolute;
+    justify-content: space-around;
     width: 100%;
     top: 330px;
-    left: 0px;
+    left: 20px;
+  }
+  html body .main_box4 .wraper_items_box4 .conteiner_details details {
+    height: 100px;
+    margin: 0 0 10px 0;
   }
   html body .main_box4 .wraper_items_box4 .conteiner_details details[open] {
-    height: 150px;
+    height: 50px;
+    padding: 0;
+    margin-bottom: -40px;
   }
   html body .main_box4 .wraper_items_box4 .conteiner_details details[open] p {
     width: 100%;
@@ -2525,7 +2540,7 @@ main {
   }
   html body .main_box5 {
     width: 100%;
-    height: 1500px;
+    height: 100%;
   }
   html body .main_box5 .box_article img {
     width: 100%;
